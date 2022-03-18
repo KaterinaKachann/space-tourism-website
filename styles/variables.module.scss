@@ -1,0 +1,47 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&display=swap');
+
+$font-regular: 400;
+$font-medium: 700;
+$font-family1: 'Bellefair', serif;
+$font-family2: 'Barlow', sans-serif;
+$font-family3: 'Barlow Condensed';
+$color-white: #FFFFFF;
+$font1: 50px;
+$font2: 28px;
+$font3: 24px;
+$font4: 20px;
+$font5: 16px;
+
+@media (max-width: 1024px) {
+   
+    $font1: 50px;
+    $font2: 28px;
+    $font3: 24px;
+    $font4: 20px;
+    $font5: 16px;
+ 
+  }
+  
+  @media (max-width: 768px) {
+   
+      $font1: 40px;
+      $font2: 22px;
+      $font3: 20px;
+      $font4: 18px;
+   
+  }
+  
+  @media (max-width: 420px) {
+    
+      $font1: 28px;
+      $font2: 18px;
+      $font3: 16px;
+      $font4: 16px;
+  
+  }
+
+  
+  
+  
