@@ -1,0 +1,126 @@
+@import  '../styles/variables.module.scss';
+.container{
+    padding-top: 6rem;  
+
+.title{
+    padding-bottom: 2rem;
+    padding-left: 6rem;
+    .titlenum{
+        font-size: $font2;
+        font-weight: $font-medium;
+        font-family: $font-family3;
+        color: $color-white;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+        opacity: 0.25;
+      
+    }
+    .titledest{
+        font-size: $font2;
+        font-weight: $font-regular;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+        text-transform: uppercase;
+        color: $color-white;
+        font-family: $font-family3;
+        color: $color-white
+    }
+ }
+ .destinfo{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .desinfoimg{
+        animation: rotation 8s infinite linear;
+        z-index: 1;
+        width: 100%;
+        height: 50%;
+    }
+    // @keyframes rotation {
+    //     from {
+    //       transform: rotate(0deg);
+    //     }
+    //     to {
+    //       transform: rotate(359deg);
+    //     }
+    //   }
+    .destdetail{
+        padding-bottom: 3rem;
+    }
+.navbar{
+        height: 2rem;
+  .navmenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 20rem;
+    .navHover{
+        padding-top: 2%;
+        border-bottom: 0.1rem solid $color-white;
+    }
+    .navitem:hover{
+        padding-bottom: 2%;
+        border-bottom: 0.1rem solid $color-white;
+      }
+    .navitem{
+        .navlink{
+      font-size: $font5;
+      font-weight: $font-regular;
+      line-height: 19px;
+      letter-spacing: 2.7px;
+      text-transform: uppercase;
+      color: $color-white;
+      font-family: $font-family3;
+      color: $color-white
+        }
+    }
+  }
+}
+}
+.destname {
+    .destnametitle{
+    font-family: $font-family1;
+    font-weight: $font-regular;
+    font-size: $font6;
+    color: $color-text;
+      }
+  }
+  .destdesc{
+    width: 25rem;
+      .destdesctitle{
+        font-family: $font-family2;
+        font-weight: $font-regular;
+        font-size: $font5;
+        color: $color-text;
+        line-height: 32px;
+      }
+  }
+.destnum{
+    display: flex;
+    justify-content: space-around;
+    .destway{
+        padding-top: 1rem;
+        p{
+            font-family: $font-family2;
+            font-weight: $font-regular;
+            font-size: $font5;
+            color: $color-text;
+            text-transform: uppercase;
+        }
+        h1{
+            font-family: $font-family1;
+            font-weight: $font-regular;
+            font-size: $font2;
+            color: $color-text;
+            text-transform: uppercase;
+        }
+    }
+}
+}
+
+@media only screen and (max-width: 780px) {
+    .destinfo{
+        text-align: center;
+    }
+}

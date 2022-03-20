@@ -13,6 +13,7 @@
   display: none;
   background-color: transparent;
   padding-right: 2rem;
+  z-index: 2;
 }
 
 .bar {
@@ -34,6 +35,7 @@
   width: 50rem;
   background: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(81.5485px);
+  z-index: 2;
   .navitem{
     padding-top: 5%;
     .navnum{
@@ -58,6 +60,7 @@
 }
 
 @media only screen and (max-width: 1440px) {
+ 
   .navitem:hover{
     border-bottom: 0.2rem solid $color-white;
     border-right: 0;
@@ -135,12 +138,7 @@
   .navitem{
     padding-left: 10%;
   }
-  .navHover{
-    padding-left: 10%;
-    border-right: 0.2rem solid $color-white;
-    border-bottom: 0;
-  }
-  .navitem:hover{
+  .navHover, .navitem:hover{
     padding-left: 10%;
     border-right: 0.2rem solid $color-white;
     border-bottom: 0;
