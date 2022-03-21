@@ -1,5 +1,4 @@
-import Link from 'next/link'
-import { useRouter } from 'next/router'
+
 import { useState } from 'react';
 import styles from "../styles/Destination.module.scss"
 import Head from 'next/head'
@@ -17,7 +16,7 @@ import Info from '../public/data.json'
 export default function Destination() {
 
     const [data] = useState(Info.destinations)
-    const [value, setValue] = useState(0)
+    const [value, setValue] = useState(1)
     const { name, images, description, distance, travel } = data[value]
     return (
         <><Head>
