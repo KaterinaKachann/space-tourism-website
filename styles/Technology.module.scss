@@ -4,7 +4,7 @@
     padding-left: 6rem;
 
     .title {
-        padding-bottom: 5rem;
+        padding-bottom: 2rem;
 
         .titlenum {
             font-size: $font2;
@@ -15,7 +15,7 @@
             letter-spacing: 2.7px;
             opacity: 0.25;
         }
-        .titlecrew {
+        .titletech {
             font-size: $font2;
             font-weight: $font-regular;
             line-height: 19px;
@@ -26,43 +26,11 @@
             color: $color-white;
         }
     }
-    .crewinfo {
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        flex-wrap: wrap;
-
-        .crewdetail {
-            width: 40rem;
-            .crewrole {
-                .crewtitle {
-                    font-family: $font-family1;
-                    font-weight: $font-regular;
-                    font-size: $font2;
-                    color: $color-white;
-                    opacity: 0.5;
-                    text-transform: uppercase;
-                }
-            }
-            .crewname {
-                .crewtitle {
-                    font-family: $font-family1;
-                    font-weight: $font-regular;
-                    font-size: $font1;
-                    color: $color-text;
-                    line-height: 64px;
-                    text-transform: uppercase;
-                }
-            }
-            .crewbio {
-                .crewtitle {
-                    font-family: $font-family2;
-                    font-weight: $font-regular;
-                    font-size: $font5;
-                    color: $color-text;
-                    line-height: 32px;
-                }
-            }
+    .techinfo {
+        .techdetail {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
             .navbar {
                 height: 2rem;
                 .navmenu {
@@ -70,8 +38,9 @@
                     padding-bottom: 2rem;
                     display: flex;
                     justify-content: space-evenly;
+                    flex-direction: column;
                     margin: 0 auto;
-                    width: 10rem;
+                    height: 10rem;
                     .navitem {
                         padding-bottom: 2%;
                         background-color: $color-white;
@@ -82,7 +51,7 @@
                         height: 1rem;
                         cursor: pointer;
                     }
-                    .navitem:hover{
+                    .navitem:hover {
                         opacity: 0.5;
                     }
                     .navHover {
@@ -95,19 +64,38 @@
                     }
                 }
             }
-        }
-        .crewimg {
-            width: 25rem;
-            height: 20rem;
-            .crewinfoimg {
-                z-index: 1;
-                width: 100%;
+            .techcontent {
+                width: 15rem;
+                .techrole {
+                    .techtitle {
+                        font-family: $font-family1;
+                        font-weight: $font-regular;
+                        font-size: $font2;
+                        color: $color-white;
+                        opacity: 0.5;
+                        text-transform: uppercase;
+                    }
+                }
+                .techname {
+                    .techtitle {
+                        font-family: $font-family1;
+                        font-weight: $font-regular;
+                        font-size: $font1;
+                        color: $color-text;
+                        line-height: 64px;
+                        text-transform: uppercase;
+                    }
+                }
+                .techdesc {
+                    .techtitle {
+                        font-family: $font-family2;
+                        font-weight: $font-regular;
+                        font-size: $font5;
+                        color: $color-text;
+                        line-height: 32px;
+                    }
+                }
             }
         }
-    }
-}
-@media only screen and (max-width: 800px) {
-    .crewinfo {
-        text-align: center;
     }
 }

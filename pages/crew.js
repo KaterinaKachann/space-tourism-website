@@ -54,8 +54,8 @@ export default function Crew() {
                             className={style.crewinfoimg}
                             src={images.webp}
                             alt={name}
-                            width={400}
-                            height={700}
+                            width={600}
+                            height={900}
                         />
                     </div>
                 </div>
