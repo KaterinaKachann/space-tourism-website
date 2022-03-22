@@ -1,10 +1,11 @@
 @import "../styles/variables.module.scss";
+@media screen and (max-width: 1440px) {
 .container {
     padding-top: 6rem;
     padding-left: 6rem;
 
     .title {
-        padding-bottom: 2rem;
+        padding-bottom: 6rem;
 
         .titlenum {
             font-size: $font2;
@@ -33,23 +34,28 @@
             justify-content: space-between;
             .navbar {
                 height: 2rem;
+                padding-bottom: 5rem;
                 .navmenu {
-                    padding-top: 4rem;
-                    padding-bottom: 2rem;
                     display: flex;
-                    justify-content: space-evenly;
-                    flex-direction: column;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
                     margin: 0 auto;
-                    height: 10rem;
+                    width: 20rem;
                     .navitem {
                         padding-bottom: 2%;
-                        background-color: $color-white;
-                        opacity: 0.17;
-                        border: none;
+                        background-color: transparent;
+                        border: 1px solid $color-white;
                         border-radius: 50%;
-                        width: 1rem;
-                        height: 1rem;
+                        width: 4rem;
+                        height: 4rem;
                         cursor: pointer;
+                        a {
+                            font-size: $font3;
+                            font-weight: $font-regular;
+                            color: $color-white;
+                            font-family: $font-family3;
+                            color: $color-white;
+                        }
                     }
                     .navitem:hover {
                         opacity: 0.5;
@@ -57,15 +63,22 @@
                     .navHover {
                         border-radius: 50%;
                         background-color: $color-white;
-                        border: none;
-                        width: 1rem;
-                        height: 1rem;
+                        border: 1px solid $color-white;
+                        width: 4rem;
+                        height: 4rem;
                         cursor: pointer;
+                        a {
+                            font-size: $font3;
+                            font-weight: $font-regular;
+                            color: $color-white;
+                            font-family: $font-family3;
+                            color: $color-black;
+                        }
                     }
                 }
             }
             .techcontent {
-                width: 15rem;
+                width: 30rem;
                 .techrole {
                     .techtitle {
                         font-family: $font-family1;
@@ -87,6 +100,7 @@
                     }
                 }
                 .techdesc {
+                    padding-bottom: 3rem;
                     .techtitle {
                         font-family: $font-family2;
                         font-weight: $font-regular;
@@ -97,5 +111,14 @@
                 }
             }
         }
+    }
+}
+}
+@media screen and (max-width: 780px) {
+    .techcontent{
+        text-align: center;
+    }
+    .techimg{
+        margin: 0 auto;
     }
 }

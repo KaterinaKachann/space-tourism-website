@@ -1,4 +1,4 @@
-@import  '../styles/variables.module.scss';
+@import "../styles/variables.module.scss";
 
 .navbar {
   display: flex;
@@ -6,7 +6,6 @@
   align-items: center;
   padding-top: 3rem;
   height: 3rem;
-
 }
 
 .hamburger {
@@ -23,8 +22,7 @@
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #D0D6F9;
-
+  background-color: #d0d6f9;
 }
 
 .navmenu {
@@ -36,9 +34,9 @@
   background: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(81.5485px);
   z-index: 2;
-  .navitem{
+  .navitem {
     padding-top: 5%;
-    .navnum{
+    .navnum {
       font-size: $font5;
       font-weight: $font-medium;
       font-family: $font-family3;
@@ -46,7 +44,7 @@
       line-height: 19px;
       letter-spacing: 2.7px;
     }
-    .navlink{
+    .navlink {
       font-size: $font5;
       font-weight: $font-regular;
       line-height: 19px;
@@ -54,23 +52,22 @@
       text-transform: uppercase;
       color: $color-white;
       font-family: $font-family3;
-      color: $color-white
-   }
+      color: $color-white;
+    }
   }
 }
 
 @media only screen and (max-width: 1440px) {
- 
-  .navitem:hover{
+  .navitem:hover {
     border-bottom: 0.2rem solid $color-white;
     border-right: 0;
   }
 
-  .navHover{
+  .navHover {
     padding-top: 5%;
     border-bottom: 0.2rem solid $color-white;
     border-right: 0;
-    .navnum{
+    .navnum {
       font-size: $font5;
       font-weight: $font-medium;
       font-family: $font-family3;
@@ -78,7 +75,7 @@
       line-height: 19px;
       letter-spacing: 2.7px;
     }
-    .navlink{
+    .navlink {
       font-size: $font5;
       font-weight: $font-regular;
       line-height: 19px;
@@ -86,13 +83,10 @@
       text-transform: uppercase;
       color: $color-white;
       font-family: $font-family3;
-      color: $color-white
+      color: $color-white;
     }
   }
-  
 }
-
-
 
 .navlogo {
   padding-left: 1rem;
@@ -114,36 +108,37 @@
   }
 
   .navmenu.active {
-      right: 0;
+    right: 0;
   }
 
   .hamburger {
-      display: block;
-      cursor: pointer;
+    display: block;
+    cursor: pointer;
   }
 
   .hamburger.active .bar:nth-child(2) {
-      opacity: 0;
+    opacity: 0;
   }
 
   .hamburger.active .bar:nth-child(1) {
-      -webkit-transform: translateY(8px) rotate(45deg);
-      transform: translateY(8px) rotate(45deg);
+    -webkit-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
   }
 
   .hamburger.active .bar:nth-child(3) {
-      -webkit-transform: translateY(-8px) rotate(-45deg);
-      transform: translateY(-8px) rotate(-45deg);
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
   }
-  .navitem{
+  .navitem {
     padding-left: 10%;
   }
-  .navHover, .navitem:hover{
+  .navHover,
+  .navitem:hover {
     padding-left: 10%;
     border-right: 0.2rem solid $color-white;
     border-bottom: 0;
   }
-  .navline{
+  .navline {
     border-bottom: 0;
   }
 }

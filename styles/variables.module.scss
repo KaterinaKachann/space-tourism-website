@@ -1,16 +1,15 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
 
 $font-regular: 400;
 $font-medium: 700;
-$font-family1: 'Bellefair', serif;
-$font-family2: 'Barlow', sans-serif;
-$font-family3: 'Barlow Condensed';
-$color-white: #FFFFFF;
-$color-text:#D0D6F9;
-$color-black: #0B0D17;
+$font-family1: "Bellefair", serif;
+$font-family2: "Barlow", sans-serif;
+$font-family3: "Barlow Condensed";
+$color-white: #ffffff;
+$color-text: #d0d6f9;
+$color-black: #0b0d17;
 $font6: 150px;
 $font1: 50px;
 $font2: 28px;
@@ -18,35 +17,27 @@ $font3: 24px;
 $font4: 20px;
 $font5: 16px;
 
-@media screen and  (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     $font6: 150px;
     $font1: 50px;
     $font2: 28px;
     $font3: 24px;
     $font4: 20px;
     $font5: 16px;
- 
-  }
-  
-  @media screen and  (max-width: 768px) {
-      $font6: 140px;
-      $font1: 40px;
-      $font2: 22px;
-      $font3: 20px;
-      $font4: 18px;
-   
-  }
-  
-  @media screen and  (max-width: 420px) {
+}
 
-      $font6: 148px;
-      $font1: 28px;
-      $font2: 18px;
-      $font3: 16px;
-      $font4: 16px;
-  
-  }
+@media screen and (max-width: 768px) {
+    $font6: 140px;
+    $font1: 40px;
+    $font2: 22px;
+    $font3: 20px;
+    $font4: 18px;
+}
 
-  
-  
-  
+@media screen and (max-width: 420px) {
+    $font6: 148px;
+    $font1: 28px;
+    $font2: 18px;
+    $font3: 16px;
+    $font4: 16px;
+}

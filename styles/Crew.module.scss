@@ -65,6 +65,7 @@
             }
             .navbar {
                 height: 2rem;
+                padding-bottom: 5rem;
                 .navmenu {
                     padding-top: 4rem;
                     padding-bottom: 2rem;
@@ -72,6 +73,7 @@
                     justify-content: space-evenly;
                     margin: 0 auto;
                     width: 10rem;
+
                     .navitem {
                         padding-bottom: 2%;
                         background-color: $color-white;
@@ -81,8 +83,9 @@
                         width: 1rem;
                         height: 1rem;
                         cursor: pointer;
+            
                     }
-                    .navitem:hover{
+                    .navitem:hover {
                         opacity: 0.5;
                     }
                     .navHover {
@@ -94,14 +97,6 @@
                         cursor: pointer;
                     }
                 }
-            }
-        }
-        .crewimg {
-            width: 25rem;
-            height: 20rem;
-            .crewinfoimg {
-                z-index: 1;
-                width: 100%;
             }
         }
     }

@@ -5,35 +5,33 @@
 }
 
 @media only screen and (max-width: 1440px) {
-html {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  background-image: url(../public/assets/home/background-home-desktop.jpg);
-  background-repeat: no-repeat;
-
-}
+  html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-image: url(../public/assets/home/background-home-desktop.jpg);
+    background-repeat: no-repeat;
+  }
 }
 @media only screen and (max-width: 800px) {
-html {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  background-image: url(../public/assets/home/background-home-tablet.jpg);
-  background-repeat:no-repeat;
-
+  html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-image: url(../public/assets/home/background-home-tablet.jpg);
+    background-repeat: no-repeat;
+  }
 }
-}
-body{
+body {
   width: 100%;
   height: inherit;
   margin: 0 auto;
 }
-li{
+li {
   list-style: none;
 }
 
 a {
   text-decoration: none;
-  transition: .2s;
+  transition: 0.2s;
 }
 
 a:hover {

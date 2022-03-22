@@ -1,26 +1,26 @@
-@import  '../styles/variables.module.scss';
+@import "../styles/variables.module.scss";
 
-.homeinfo{
+.homeinfo {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: flex-end;
     padding-top: 10rem;
-    .homeinfotitle{
+    .homeinfotitle {
         width: 25rem;
-        h2{
+        h2 {
             font-family: $font-family3;
             font-weight: $font-regular;
             font-size: $font2;
             color: $color-text;
         }
-        h1{
+        h1 {
             font-family: $font-family1;
             font-weight: $font-regular;
             font-size: $font6;
             color: $color-text;
         }
-        p{
+        p {
             font-family: $font-family2;
             font-weight: $font-regular;
             font-size: $font4;
@@ -28,16 +28,16 @@
             line-height: 32px;
         }
     }
-    
-    .btninfo{
-        .circle{
+
+    .btninfo {
+        .circle {
             border: 1rem solid $color-white;
-            border-color:$color-white;
+            border-color: $color-white;
             border-radius: 50%;
-            background-color:$color-white;
+            background-color: $color-white;
             width: 20rem;
             height: 20rem;
-            transition: box-shadow .3s;
+            transition: box-shadow 0.3s;
             font-family: $font-family1;
             font-weight: $font-regular;
             letter-spacing: 2px;
@@ -47,16 +47,14 @@
             text-transform: uppercase;
             cursor: pointer;
         }
-        .circle:hover{
-          box-shadow: 0px 0px 20px 88px rgba(253, 253, 253, 0.1);
+        .circle:hover {
+            box-shadow: 0px 0px 20px 88px rgba(253, 253, 253, 0.1);
         }
     }
-    
 }
 @media only screen and (max-width: 780px) {
-    .homeinfotitle{
+    .homeinfotitle {
         text-align: center;
         padding-bottom: 2rem;
     }
 }
-

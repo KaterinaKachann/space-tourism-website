@@ -22,16 +22,7 @@ export default function Technology() {
                 </div>
                 <div className={styles.techinfo}>
                     <div className={styles.techdetail}>
-                        <nav className={styles.navbar}>
-                            <ul className={styles.navmenu}>
-                                {data.map((item, index) => (
-                                    <li key={index} className={index}>
-                                        <button onClick={() => setValue(index)} className={index === value ? styles.navHover : styles.navitem}>
-                                        </button>
-                                    </li>
-                                ))}
-                            </ul>
-                        </nav>
+
                         <div className={styles.techcontent}>
                             <div className={styles.techrole}>
                                 <p className={styles.techtitle}>
@@ -46,14 +37,26 @@ export default function Technology() {
                                     {description}
                                 </p>
                             </div>
+                            <nav className={styles.navbar}>
+                                <ul className={styles.navmenu}>
+                                    {data.map((item, index) => (
+                                        <li key={index} className={index}>
+                                            <button onClick={() => setValue(index)} className={index === value ? styles.navHover : styles.navitem}>
+                                                <a>{index + 1}</a>
+                                            </button>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </nav>
                         </div>
-                        <div className={styles.techimg}>
+                        <div className={styles.techimg} style={{ position: "relative", width: "50%", height: "50%", paddingBottom: "30%" }}>
                             <Image
                                 className={styles.techinfoimg}
                                 src={images.portrait}
                                 alt={name}
-                                width={500}
-                                height={500}
+                                layout="fill"
+                                objectFit="contain"
+
                             />
                         </div>
 

@@ -7,9 +7,11 @@ import Info from '../public/data.json'
 import Image from 'next/image'
 
 export default function Crew() {
+
     const [data] = useState(Info.crew)
     const [value, setValue] = useState(0)
     const { name, images, role, bio } = data[value]
+
     return (
         <><Head>
             <link rel="icon" href="./favicon.png" />
@@ -23,7 +25,7 @@ export default function Crew() {
                     <div className={style.crewdetail}>
                         <div className={style.title}>
                             <span className={style.titlenum}>02&nbsp;</span>
-                            <span className={style.titlecrew}>Pick your destination</span>
+                            <span className={style.titlecrew}>Meet your crew</span>
                         </div>
                         <div className={style.crewrole}>
                             <p className={style.crewtitle}>
@@ -40,7 +42,7 @@ export default function Crew() {
                         </div>
                         <nav className={style.navbar}>
                             <ul className={style.navmenu}>
-                                {data.map(( item, index) => (
+                                {data.map((item, index) => (
                                     <li key={index} className={index}>
                                         <button onClick={() => setValue(index)} className={index === value ? style.navHover : style.navitem}>
                                         </button>
@@ -49,13 +51,13 @@ export default function Crew() {
                             </ul>
                         </nav>
                     </div>
-                    <div className={style.crewimg}>
+                    <div className={style.crewimg} style={{ position: "relative", width: "50%", height: "100%", paddingBottom: "40%"}}>
                         <Image
                             className={style.crewinfoimg}
                             src={images.webp}
                             alt={name}
-                            width={600}
-                            height={900}
+                            layout="fill"
+                            objectFit="contain"
                         />
                     </div>
                 </div>

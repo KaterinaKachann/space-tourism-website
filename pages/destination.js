@@ -7,12 +7,6 @@ import Image from 'next/image'
 import Info from '../public/data.json'
 
 
-
-
-
-
-
-
 export default function Destination() {
 
     const [data] = useState(Info.destinations)
