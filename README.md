@@ -8,11 +8,7 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor]
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ### The challenge
@@ -24,21 +20,19 @@ Users should be able to:
 - View each page and be able to toggle between the tabs to see new information
 
 ### Screenshot
+<img width="1436" alt="Screen Shot 2022-03-22 at 10 35 03" src="https://user-images.githubusercontent.com/70857908/159414851-8fd24386-bf21-4a6b-9cfa-782dccdc59bb.png">
+
 
 ### Links
 
-- Solution URL:
-- Live Site URL:
+- Solution URL: https://space-tourism-blue.vercel.app/
 
-## My process
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [Next.js](https://nextjs.org/) - React framework
 - [Styled Components](https://styled-components.com/) - For styles
